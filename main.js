@@ -27,7 +27,7 @@ function getTotalSupply() {
   console.log(`\nCurrently there are total of ${MusicNftStore.length} NFT's\n`)
 }
 
-mintNFT('Beethoven\'s Symphony No. 5', 'Varied', 'Orchestral', '30 Minutes')
+mintNFT('Beethoven\'s Symphony No. 5', 'Varied', 'Varying', 'Orchestral', '30 Minutes')
 mintNFT('AC/DC\'s "Thunderstuck"', 'High', 'Loud', 'Electric guitars and drums', '4 Minutes')
 mintNFT('Miles Davis\'s "So What"', 'Moderate', 'Soft', 'Jazz quintet', '9 Minutes')
 
