@@ -1,30 +1,30 @@
-const NftStore = []
+const MusicNftStore = []
 
 function mintNFT (name, pitch, dynamics, timbre, duration) {
   const musicNFT = {
     name, pitch, dynamics, timbre, duration
   }
 
-  musicNFT.id = NftStore.length + 1
+  musicNFT.id = MusicNftStore.length + 1
 
-  NftStore.push(musicNFT)
+  MusicNftStore.push(musicNFT)
   console.log(`NFT ${name} minted!!`)
 }
 
 function listNFTs () {
-  NftStore.forEach(nft => {
-    console.log(`ID : ${nft.id}`)
-    console.log(`Name : ${nft.name}`)
-    console.log(`Pitch : ${nft.pitch}`);
-    console.log(`Dynamics : ${nft.dynamics}`)
-    console.log(`Timbre : ${nft.timbre}`)
-    console.log(`Duration : ${nft.duration}`)
-    console.log('\t')
+  MusicNftStore.forEach(nft => {
+    console.log(`ID\t: ${nft.id}`)
+    console.log(`Name\t: ${nft.name}`)
+    console.log(`Pitch\t: ${nft.pitch}`);
+    console.log(`Dynamics: ${nft.dynamics}`)
+    console.log(`Timbre\t: ${nft.timbre}`)
+    console.log(`Duration: ${nft.duration}`)
+    console.log('\n')
   })
 }
 
 function getTotalSupply() {
-  console.log(`\nCurrently there are total of ${NftStore.length} NFT's\n`)
+  console.log(`\nCurrently there are total of ${MusicNftStore.length} NFT's\n`)
 }
 
 mintNFT('Beethoven\'s Symphony No. 5', 'Varied', 'Orchestral', '30 Minutes')
